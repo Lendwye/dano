@@ -1,0 +1,109 @@
+BASE MODEL:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                log_gmv   R-squared:                       0.001
+Model:                            OLS   Adj. R-squared:                  0.001
+Method:                 Least Squares   F-statistic:                     19.70
+Date:                Sun, 26 Apr 2026   Prob (F-statistic):           9.20e-13
+Time:                        14:05:46   Log-Likelihood:            -1.2028e+05
+No. Observations:              102342   AIC:                         2.406e+05
+Df Residuals:                  102338   BIC:                         2.406e+05
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+=====================================================================================
+                        coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------
+Intercept             7.1937      0.006   1158.560      0.000       7.182       7.206
+markup               -0.0017      0.001     -1.388      0.165      -0.004       0.001
+cb_percent            0.0030      0.001      5.279      0.000       0.002       0.004
+markup:cb_percent    -0.0001      0.000     -0.928      0.354      -0.000       0.000
+==============================================================================
+Omnibus:                     2525.002   Durbin-Watson:                   1.984
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3635.127
+Skew:                          -0.275   Prob(JB):                         0.00
+Kurtosis:                       3.742   Cond. No.                         140.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+CONTROL MODEL:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                log_gmv   R-squared:                       0.049
+Model:                            OLS   Adj. R-squared:                  0.049
+Method:                 Least Squares   F-statistic:                     231.2
+Date:                Sun, 26 Apr 2026   Prob (F-statistic):               0.00
+Time:                        14:05:46   Log-Likelihood:            -1.1772e+05
+No. Observations:              102342   AIC:                         2.355e+05
+Df Residuals:                  102318   BIC:                         2.357e+05
+Df Model:                          23                                         
+Covariance Type:            nonrobust                                         
+==============================================================================================
+                                 coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------------
+Intercept                      6.6896      0.014    478.800      0.000       6.662       6.717
+C(gender_cd)[T.M]              0.0356      0.005      6.811      0.000       0.025       0.046
+C(gender_cd)[T.unknown]        0.0177      0.056      0.317      0.752      -0.092       0.127
+C(age_group)[T.23_27]          0.2489      0.013     19.270      0.000       0.224       0.274
+C(age_group)[T.28_32]          0.4388      0.012     35.516      0.000       0.415       0.463
+C(age_group)[T.33_37]          0.5246      0.012     43.133      0.000       0.501       0.548
+C(age_group)[T.38_42]          0.5494      0.012     44.308      0.000       0.525       0.574
+C(age_group)[T.43_47]          0.5636      0.013     42.001      0.000       0.537       0.590
+C(age_group)[T.48_52]          0.5083      0.015     34.151      0.000       0.479       0.537
+C(age_group)[T.53_57]          0.4990      0.017     30.182      0.000       0.467       0.531
+C(age_group)[T.58_62]          0.5233      0.019     26.851      0.000       0.485       0.561
+C(age_group)[T.63_plus]        0.4091      0.017     23.443      0.000       0.375       0.443
+C(age_group)[T.<18]           -0.0436      0.030     -1.436      0.151      -0.103       0.016
+C(age_group)[T.unknown]        1.1273      0.261      4.317      0.000       0.615       1.639
+C(income_group)[T.200k+]       0.1454      0.008     18.032      0.000       0.130       0.161
+C(income_group)[T.30-50k]     -0.0976      0.014     -7.071      0.000      -0.125      -0.071
+C(income_group)[T.50-80k]     -0.0440      0.009     -4.724      0.000      -0.062      -0.026
+C(income_group)[T.80-120k]    -0.0400      0.009     -4.572      0.000      -0.057      -0.023
+C(income_group)[T.<30k]       -0.0160      0.011     -1.426      0.154      -0.038       0.006
+C(income_group)[T.unknown]     0.0673      0.008      8.596      0.000       0.052       0.083
+markup                        -0.0022      0.001     -1.860      0.063      -0.005       0.000
+cb_percent                     0.0034      0.001      5.952      0.000       0.002       0.004
+markup:cb_percent          -6.952e-05      0.000     -0.626      0.531      -0.000       0.000
+lifestyle___super_cnt        8.95e-05   2.42e-05      3.701      0.000    4.21e-05       0.000
+==============================================================================
+Omnibus:                     2572.663   Durbin-Watson:                   1.986
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3840.154
+Skew:                          -0.267   Prob(JB):                         0.00
+Kurtosis:                       3.784   Cond. No.                     1.45e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.45e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+EXPERIENCE MODEL:
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                log_gmv   R-squared:                       0.004
+Model:                            OLS   Adj. R-squared:                  0.004
+Method:                 Least Squares   F-statistic:                     92.25
+Date:                Sun, 26 Apr 2026   Prob (F-statistic):           1.92e-78
+Time:                        14:05:46   Log-Likelihood:            -1.2013e+05
+No. Observations:              102342   AIC:                         2.403e+05
+Df Residuals:                  102337   BIC:                         2.403e+05
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+Intercept                 7.1464      0.006   1110.611      0.000       7.134       7.159
+markup                   -0.0045      0.001     -4.589      0.000      -0.006      -0.003
+is_experienced            0.0755      0.007     10.745      0.000       0.062       0.089
+markup:is_experienced     0.0034      0.001      2.423      0.015       0.001       0.006
+cb_percent                0.0042      0.000     10.196      0.000       0.003       0.005
+==============================================================================
+Omnibus:                     2449.112   Durbin-Watson:                   1.984
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3515.401
+Skew:                          -0.269   Prob(JB):                         0.00
+Kurtosis:                       3.731   Cond. No.                         40.5
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
